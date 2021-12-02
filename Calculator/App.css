@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* To make everything center inside the body*/
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.calculator {
+    width: 300px;
+    background-color: #4C5270;
+    padding-bottom: 15px;
+    border-radius: 7px;
+    box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.74);
+}
+
+/* box-shadow details : x-offset 5px, y-offset 8px, blur of 8px, spread-radius 
+of -2px and color of black with opacity 0.61*/
+
+.display {
+    width: 100%;
+    height: 80px;
+    border: none; /* this take away the border of the input*/
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #36EEE0;
+    color: #000; 
+    /* Color attribute is for the fonts to be display
+    inside the input*/ 
+    text-align: right;
+    border-top-left-radius: 7px; /* it curves the top edges of the input*/
+    border-top-right-radius: 7px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* the give space between the buttons*/
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #F652A0;
+    font-size: 25px;
+    color: #fff; /*Font color for text inside the button*/
+    margin: 10px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .operator {
+    background-color: #36EEE0;
+    color: #000;
+  }
+
+  .playing{
+        
+    border-color: green;
+    box-shadow: green;
+}
+  
+
